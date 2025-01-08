@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fonts */
+  --Garamond-Font: "EB Garamond", serif;
+  --Baskerville-Font: "Libre Baskerville", serif;
+  /* Color */
+  --primary-color: rgb(172, 121, 53);
+  --secondary-color: rgb(204, 201, 100);
+  --white-color:#fff;
+  --black-color:#000;
+  
+}
