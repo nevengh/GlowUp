@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { LanguageProvider } from './LanguageContext';
 import WhatsAppBtn from './components/WhatsAppBtn/WhatsAppBtn';
 import Home from './pages/Home/Home';
+import Footer from './components/Footer/Footer';
 const App = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const App = () => {
 
       <Home/>
       <WhatsAppBtn/>
+      <Footer/>
      </LanguageProvider>
     </div>
   )

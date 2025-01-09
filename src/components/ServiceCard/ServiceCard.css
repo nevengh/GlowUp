@@ -1,0 +1,127 @@
+.sercie_Card {
+    width: 420px;
+    height: 420px;
+    position: relative;
+    perspective: 1000px; /* Enables 3D flip effect */
+    overflow: hidden;
+    /* border-radius: 4px; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .sercie_Card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 10px; */
+  }
+  
+  /* Add a blur effect and gradient at the bottom */
+  
+  /* Content inside the card */
+  .card_content {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    text-align: center;
+    z-index: 2;
+    color: white;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    backdrop-filter: blur(22px);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .card_content h3 {
+    font-size: 30px;
+    margin: 0;
+    /* color: var(--primary-color); */
+    font-weight: bold;
+    font-family: var(--Garamond-Font);
+letter-spacing: 4px;
+  }
+  
+  .card_content button {
+    margin-top: 10px;
+    font-size:19px;
+    font-weight: bold;
+    color: var(--primary-color);
+    border: none;
+    background: none;
+    cursor: pointer;
+    /* text-decoration: underline; */
+    transition: color 0.3s ease;
+    letter-spacing: 2px;
+    /* text-underline-offset: 5px;
+    text-decoration-thickness: 5px; */
+    border: 3px solid rgb(172, 121, 53);
+    padding: 5px 10px
+  }
+  
+  .card_content button:hover {
+    color: var(--primary-color, #b97a56);
+  }
+  
+  .card_front,
+.card_back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease;
+  border-radius: 10px;
+}
+
+.card_front {
+  transform: rotateY(0deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_back {
+  transform: rotateY(180deg);
+  background-color: #fff; /* Customize back side color */
+  color: #333; /* Customize text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 3px solid rgb(172, 121, 53);
+}
+
+.sercie_Card.flipped .card_front {
+  transform: rotateY(-180deg);
+}
+
+.sercie_Card.flipped .card_back {
+  transform: rotateY(0deg);
+}
+
+.card_back button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary-color, #b97a56);
+  border: 2px solid var(--primary-color, #b97a56);
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.card_back button:hover {
+  color: #fff;
+  background-color: var(--primary-color, #b97a56);
+  border-color: #fff;
+}

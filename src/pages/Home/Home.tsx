@@ -4,6 +4,8 @@ import './Home.css';
 import her from '../../assets/her-img.jpg';
 import him from '../../assets/him-img.jpg';
 import { useState } from 'react';
+import ContactUs from '../ContactUs/ContactUs';
+import ServicesPage from '../ServicesPage/ServicesPage';
 
 const Home = () => {
   const [selectedImage, setSelectedImage] = useState(her);  // HER image as default
@@ -19,9 +21,13 @@ const Home = () => {
   return (
     <div className='Home'>
       <Hero />
-
+      {/* service */}
+      <div className="services_Home mt-5">
+        <h1 className='text-center'>Our Services</h1>
+        <ServicesPage/>
+      </div>
       {/* For Him/Her */}
-      <div className="for-him-her">
+      <div className="for-him-her mt-5">
         <h4 className="text-center subhead-title">We Provide for You</h4>
         <h1 className='text-center head-title'>We Treat All Types of Skin</h1>
         
@@ -34,6 +40,13 @@ const Home = () => {
           <img src={selectedImage} alt="Selected" />
         </div>
       </div>
+
+      {/* Contact US */}
+      <div className="conatct_Home">
+        <ContactUs/>
+      </div>
+
+      
     </div>
   );
 }

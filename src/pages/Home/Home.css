@@ -32,3 +32,35 @@
     height: 100%;
     object-fit: cover;
 }
+/* Conatct Home */
+.conatct_Home {
+    padding: 15px 0;
+    background: linear-gradient(45deg, #b97a56 50%, #d08c6a 50%);
+    background-size: 200% 100%;
+    animation: waveAnimation 5s infinite alternate;
+  }
+  
+  @keyframes waveAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+
+  /* services */
+  .services_Home h1{
+    font-family: var(--Baskerville-Font);
+  }
+@media(max-width:767px){
+    .image-box{
+        width: 100%;
+    }
+    .image-box img{
+        object-fit: contain;
+    }
+    .for-him-her{
+        width: 100%;
+    }
+}

@@ -1,0 +1,61 @@
+.formHeading h3,.formHeading h1{
+    font-family: var(--Garamond-Font);
+    letter-spacing: 5px;
+    font-size: 14px;
+    color: var(--white-color);
+}
+.formHeading h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.text-form{
+    font-size: 15px;
+    font-family: var(--Garamond-Font);
+    color: white;
+    
+}
+.form-label{
+    font-family: var(--Garamond-Font);
+    color: white;
+    font-size: 18px;
+
+}
+ .ContactUs form input ,textarea.form-control {
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid white;
+    font-family: var(--Garamond-Font);
+ }
+ textarea.form-control{
+    border:1px solid white ;
+    color: white;
+    
+ }
+ .Opening{
+    color: var(--white-color);
+    font-family: var(--Garamond-Font);
+    text-align: center;
+ }
+ .days h2{
+    color: rgba(245, 239, 238, .7);
+    font-size: 22px;
+ }
+ .days p{
+    color: white;
+    font-size: 18px;
+ }
+ .days{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+ }
+ .Days_Open{
+    margin-top: 20px;
+    gap: 35px;
+ }
+ 
+ .ContactUs iframe{
+    width: 100%;
+ }
