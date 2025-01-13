@@ -53,6 +53,27 @@
   .services_Home h1{
     font-family: var(--Baskerville-Font);
   }
+
+
+/* Fit */
+.fit{
+    height: 60vh;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fit img{
+    height: 100%;
+}
+.slim-text{
+    font-family: var(--Garamond-Font);
+    text-align: center;
+    width: 80%;
+    font-size: 30px;
+}
+
+
 @media(max-width:767px){
     .image-box{
         width: 100%;

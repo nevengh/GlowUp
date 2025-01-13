@@ -1,4 +1,4 @@
-import { Button } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import Hero from '../../components/Hero/Hero';
 import './Home.css';
 import her from '../../assets/her-img.jpg';
@@ -6,6 +6,7 @@ import him from '../../assets/him-img.jpg';
 import { useState } from 'react';
 import ContactUs from '../ContactUs/ContactUs';
 import ServicesPage from '../ServicesPage/ServicesPage';
+import slim from '../../assets/image-beautiful-young-sport-fitness-shocked-woman-posing-with-centimeter-waist-isolated-grey-wall.webp'
 
 const Home = () => {
   const [selectedImage, setSelectedImage] = useState(her);  // HER image as default
@@ -26,6 +27,14 @@ const Home = () => {
         <h1 className='text-center'>Our Services</h1>
         <ServicesPage/>
       </div>
+        <Container>
+      {/* ٍFit body */}
+      <div className="fit mt-5">
+
+        <p className='slim-text'>Start your journey to the perfect body today !<br/> With the latest body sculpting devices</p>
+        <img src={slim} alt="" />
+      </div>
+        </Container>
       {/* For Him/Her */}
       <div className="for-him-her mt-5">
         <h4 className="text-center subhead-title">We Provide for You</h4>

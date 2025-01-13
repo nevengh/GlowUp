@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ServiceCard.css";
+import { Button } from "react-bootstrap";
 
 interface ServiceCardProp {
   serviceImg: string;
@@ -16,11 +17,11 @@ const ServiceCard: React.FC<ServiceCardProp> = ({ serviceImg, serviceName }) => 
   return (
     <div className={`sercie_Card ${flipped ? "flipped" : ""}`}>
       {/* Front Side */}
-      <div className="card_front">
+      <div className="card_front" onClick={handleFlip}>
         <img src={serviceImg} alt="Service" />
         <div className="card_content">
-          <h3>{serviceName}</h3>
-          <button onClick={handleFlip}>Know More &gt;</button>
+          <h3 onClick={handleFlip}>{serviceName}</h3>
+          {/* <Button variant="dark" > &gt;</Button> */}
         </div>
       </div>
 
@@ -30,7 +31,7 @@ const ServiceCard: React.FC<ServiceCardProp> = ({ serviceImg, serviceName }) => 
           {serviceName} offers the best services to enhance your beauty and
           confidence. Book now to experience excellence!
         </p>
-        <button onClick={handleFlip}>Back</button>
+        <Button variant="dark" onClick={handleFlip}>Back</Button>
       </div>
     </div>
   );

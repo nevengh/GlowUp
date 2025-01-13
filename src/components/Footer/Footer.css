@@ -1,60 +1,15 @@
-.Footer{
-    background: linear-gradient(135deg, rgba(185,122,86,1) 0%, rgba(166,113,83,1) 13%, rgba(135,99,77,1) 35%);
-  
-}
-.Footer p{
-    padding: 0 ;
-    margin: 0;
-}
-
-.logo_socialmedia{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-.Footer img{
-    width: 200px;
-}
-.logo_socialmedia .socialLinks a svg path{
-    fill: var(--white-color);
-}
-.logo_socialmedia .socialLinks a svg{
-    width: 20px;
-}
-.logo_socialmedia .socialLinks a{
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(185,122,86,1);
-}
-.logo_socialmedia .socialLinks a:hover{
-    background-color: var(--white-color);
-}
-.logo_socialmedia .socialLinks a:hover svg path {
-    fill: var(--primary-color);
-}
-.copywrite{
-    font-family: var(--Baskerville-Font);
-}
-.callUs h1{
-    font-family: var(--Garamond-Font);
-    font-size: 35px;
-    color: white;
-    letter-spacing: 1px;
-    
-}
 .callUs {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
-
+.footer_content{
+    justify-content: space-around;
+}
+.Footer{
+    background: linear-gradient(135deg, rgba(185,122,86,1) 0%, rgba(166,113,83,1) 13%, rgba(135,99,77,1) 35%);
+  
+}
 .callUs a svg {
     width: 20px;
     margin-right: 5px;
@@ -72,4 +27,54 @@
 .callUs a p{
     transition: all ease-in-out .5s;
     font-size: 20px;
+} 
+.Footer p{
+    padding: 0 ;
+    margin: 0;
 }
+.Footer img{
+    width: 200px;
+}
+ .socialLinks a svg path{
+    fill: var(--white-color);
+}
+ .socialLinks a svg{
+    width: 20px;
+}
+ .socialLinks a{
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(185,122,86,1);
+}
+ .socialLinks a:hover{
+    background-color: var(--white-color);
+}
+ .socialLinks a:hover svg path {
+    fill: var(--primary-color);
+}
+.copywrite{
+    font-family: var(--Baskerville-Font);
+}
+/* 
+.logo_socialmedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.callUs h1{
+    font-family: var(--Garamond-Font);
+    font-size: 35px;
+    color: white;
+    letter-spacing: 1px;
+    
+}
+
+*/
