@@ -50,7 +50,7 @@
   }
 
   /* services */
-  .services_Home h1{
+  .services_Home h1 , .FAq_Heading{
     font-family: var(--Baskerville-Font);
   }
 
@@ -72,6 +72,7 @@
     width: 80%;
     font-size: 30px;
 }
+
 
 
 @media(max-width:767px){
