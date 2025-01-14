@@ -8,8 +8,7 @@ import { useLanguage } from "../../LanguageContext";
 import en from "../../locales/en";
 import ar from "../../locales/ar";
 import { Dropdown } from "react-bootstrap";
-import Aos from 'aos';
-import { useEffect } from "react";
+
 const Hero = () => {
   const { language, setLanguage } = useLanguage();
   const translations = language === "en" ? en : ar;
@@ -17,19 +16,18 @@ const Hero = () => {
   const handleLanguageChange = (lang: "en" | "ar") => {
     setLanguage(lang);
   };
-   useEffect(() => {
-      Aos.init({ duration: 1000, delay: 200 }); // يمكنك تعديل التأخير والمدّة حسب احتياجاتك
-    }, []);
+
   return (
     <div className="Hero">
       <video src={heroVideo} autoPlay muted loop></video>
       <div className="overlay">
         <div className="hero-content">
-          <h1 className="hero-heading" data-aos="fade-up">
-            Glow Up Your Skin <br /> With Us
+          <h1 className="hero-heading" >
+            {translations.HeroHeadLine}
           </h1>
-          <a href="#book" className="hero-btn" data-aos="fade-up" data-aos-delay="200">
-            Book Now
+          <h2>{translations.aboutHeading}</h2>
+          <a href="#contact" className="hero-btn mt-4" >
+            {translations.HeroBTN}
           </a>
         </div>
         <Navbar expand="lg" className="navbar-overlay">

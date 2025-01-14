@@ -3,20 +3,21 @@ import Hero from "../../components/Hero/Hero";
 import "./Home.css";
 import her from "../../assets/her-img.jpg";
 import him from "../../assets/him-img.jpg";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import ContactUs from "../ContactUs/ContactUs";
 import ServicesPage from "../ServicesPage/ServicesPage";
-import slim from "../../assets/image-beautiful-young-sport-fitness-shocked-woman-posing-with-centimeter-waist-isolated-grey-wall.webp";
-import Aos from "aos";
+
 import FAQ from "../FAQ/FAQ";
+// import { useLanguage } from "../../LanguageContext";
+// import en from "../../locales/en";
+// import ar from "../../locales/ar";
 
 const Home = () => {
+  // const { language } = useLanguage();
+  // const translations = language === "en" ? en : ar;
   const [selectedImage, setSelectedImage] = useState(her); // HER image as default
 
-  useEffect(() => {
-    Aos.init({ duration: 1000, delay: 200 }); // يمكنك تعديل التأخير والمدّة حسب احتياجاتك
-  }, []);
-
+ 
   const handleShowHer = () => {
     setSelectedImage(her);
   };
@@ -28,6 +29,7 @@ const Home = () => {
   return (
     <div className="Home">
       <Hero />
+      
       {/* service */}
       <div className="services_Home mt-5">
         <h1 className="text-center">Our Services</h1>
@@ -35,16 +37,16 @@ const Home = () => {
       </div>
       <Container>
         {/* Fit body */}
-        <div className="fit mt-5" data-aos="fade-up">
+        {/* <div className="fit mt-5" data-aos="fade-up">
           <p className="slim-text">
             Start your journey to the perfect body today !<br /> With the latest
             body sculpting devices
           </p>
           <img src={slim} alt="" />
-        </div>
+        </div> */}
       </Container>
       {/* For Him/Her */}
-      <div className="for-him-her mt-5" data-aos="fade-up">
+      <div className="for-him-her mt-5" >
         <h4 className="text-center subhead-title">We Provide for You</h4>
         <h1 className="text-center head-title">We Treat All Types of Skin</h1>
 
@@ -62,7 +64,7 @@ const Home = () => {
       {/* FAQ */}
       <FAQ/>
       {/* Contact US */}
-      <div className="conatct_Home" data-aos="fade-up">
+      <div id="contact" className="conatct_Home" >
         <ContactUs />
       </div>
     </div>

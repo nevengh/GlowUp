@@ -2,36 +2,42 @@ import React, { useState } from "react";
 import "./ServiceCard.css";
 import { Button } from "react-bootstrap";
 
-interface ServiceCardProp {
+interface ServiceCardProps {
   serviceImg: string;
   serviceName: string;
+  serviceBackKeys: string[]; // Keys for translations
 }
 
-const ServiceCard: React.FC<ServiceCardProp> = ({ serviceImg, serviceName }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({
+  serviceImg,
+  serviceName,
+  serviceBackKeys,
+}) => {
   const [flipped, setFlipped] = useState(false);
 
   const handleFlip = () => {
-    setFlipped(!flipped);
+    setFlipped((prevState) => !prevState);
   };
 
   return (
     <div className={`sercie_Card ${flipped ? "flipped" : ""}`}>
       {/* Front Side */}
       <div className="card_front" onClick={handleFlip}>
-        <img src={serviceImg} alt="Service" />
+        <img src={serviceImg} alt={serviceName} />
         <div className="card_content">
-          <h3 onClick={handleFlip}>{serviceName}</h3>
-          {/* <Button variant="dark" > &gt;</Button> */}
+          <h3>{serviceName}</h3>
         </div>
+        <button>See More</button>
       </div>
 
       {/* Back Side */}
       <div className="card_back">
-        <p>
-          {serviceName} offers the best services to enhance your beauty and
-          confidence. Book now to experience excellence!
-        </p>
-        <Button variant="dark" onClick={handleFlip}>Back</Button>
+        {serviceBackKeys.map((line, index) => (
+          <p key={index}>{line}</p>
+        ))}
+        <Button variant="dark" onClick={handleFlip}>
+          Back
+        </Button>
       </div>
     </div>
   );

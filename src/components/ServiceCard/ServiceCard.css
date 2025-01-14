@@ -24,35 +24,61 @@
   /* Content inside the card */
   .card_content {
     position: absolute;
-    /* bottom: 0px;
-    left: 0; */
     text-align: center;
     z-index: 2;
     color: white;
     background-color: hsla(0, 0%, 100%, 0.1);
     backdrop-filter: blur(2px);
-    width: 60%;
+    width: 100%;
     height: 100px;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
      /* إضافة تأثير بدون حواف */
      mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
      -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
-   
-    
+  }
+  .card_front button {
+    width: 80%;
+    border: 2px solid var(--primary-color, #b97a56); /* Outline matches primary theme */
+    background-color: transparent; /* Transparent background for a modern look */
+    color: var(--primary-color, #b97a56); /* Primary color text */
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 25px; /* Rounded edges for a softer feel */
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: var(--Garamond-Font); /* Match the font style */
+  }
+  .card_front button:hover {
+    background-color: var(--primary-color, #b97a56); /* Fill button with primary color on hover */
+    color: #fff; /* Text changes to white */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+    transform: scale(1.05); /* Slightly enlarge for interactivity */
   }
   
   .card_content h3 {
-    font-size: 30px;
-    margin: 0;
-    font-weight: bold;
-    font-family: var(--Garamond-Font);
-    letter-spacing: 4px;
-    cursor: pointer;
-    color: #1b1b1b;
+    font-size: 26px; /* Slightly smaller for balance */
+    font-weight: 700; /* Bold to emphasize the title */
+    font-family: var(--Garamond-Font, "Georgia", serif); /* Classic font for elegance */
+    color: var(--primary-color, #b97a56); /* Matches the primary theme color */
+    text-transform: capitalize; /* Consistent capitalization for titles */
+    letter-spacing: 1.5px; /* Subtle spacing for readability */
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds depth and visibility */
+    margin: 0; /* Removes default margin */
+    padding: 0 10px; /* Ensures proper spacing inside the container */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    cursor: pointer; /* Interactive pointer */
   }
+  .card_content h3:hover {
+    color: #fff; /* Text turns white on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+    text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4); /* More pronounced shadow on hover */
+  }  
   
   
   
@@ -76,7 +102,8 @@
 
 .card_back {
   transform: rotateY(180deg);
-  background-color: #fff; /* Customize back side color */
+  background-color: #f1f1f1;
+  backdrop-filter: blur(20px);
   color: #333; /* Customize text color */
   display: flex;
   flex-direction: column;
@@ -85,7 +112,8 @@
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 3px solid rgb(172, 121, 53);
+  border: 3px solid #333;
+  overflow: hidden;
 }
 
 .sercie_Card.flipped .card_front {
@@ -95,21 +123,29 @@
 .sercie_Card.flipped .card_back {
   transform: rotateY(0deg);
 }
-
+.card_back p{
+  font-family: var(--Garamond-Font);
+  font-size: 23px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  line-height: 35px;
+}
 .card_back button {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
-  color: var(--primary-color, #b97a56);
-  border: 2px solid var(--primary-color, #b97a56);
-  background: none;
+  
   cursor: pointer;
+  color: #fff;
+  background-color: var(--primary-color, #b97a56);
+  border-color: #fff;
   transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 .card_back button:hover {
-  color: #fff;
-  background-color: var(--primary-color, #b97a56);
-  border-color: #fff;
+  color: var(--primary-color, #b97a56);
+  border: 2px solid var(--primary-color, #b97a56);
+  background: none;
 }
