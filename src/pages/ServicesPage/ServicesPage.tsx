@@ -1,45 +1,117 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import './ServicesPage.css';
-import service1 from '../../assets/close-up-hands-wearing-protective-gloves.jpg';
-import service2 from '../../assets/view-tape-measure-with-apple-fruit.jpg';
-import service3 from '../../assets/young-woman-wearing-medical-cap-examined-by-doctor-beauty-clinic-gloves-before-treatment.jpg';
-import service4 from '../../assets/woman-white-bathrobe-sitting-medical-couch-undergoing-laser-hair-removal-with-vacuum-suction.jpg'
+import laser from '../../assets/graphic-customer-service.png';
+import slim from '../../assets/apple.png';
+import tooth from '../../assets/toothIcon.png';
+import service4 from '../../assets/IPL Hair Removal System_H03_2k.png';
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
 import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+import AOS from 'aos';
 
 import { useLanguage } from "../../LanguageContext";
 import en from "../../locales/en";
 import ar from "../../locales/ar";
+
 const ServicesPage = () => {
- 
   const { language } = useLanguage();
   const translations = language === "en" ? en : ar;
-  
+
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // مدة الأنيميشن
+      once: true,     // الأنيميشن يظهر مرة واحدة فقط
+    });
+  }, []);
+
   return (
     <div className="ServicesPage mt-5">
       <Container>
-        <Row className="justify-content-center align-items-center m-auto">
-        <Col lg={4} md={6} sm={12}>
-            <ServiceCard serviceImg={service1} serviceName={translations.DentalCareServices} serviceBackKeys={[
-              translations.Veneers,
-              translations.HollywoodSmile,
-              translations.ProfessionalTeethWhitening,
-            translations.DeepTeethCleaning
-  ]}/>
+        <div className="AestheticTreatments">
+        
+        <Row className="justify-content-center align-items-center m-auto g-3">
+          
+          <Col
+            lg={4}
+            md={6}
+            sm={12}
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
+            <ServiceCard
+              serviceImg={laser}
+              serviceName={translations.AestheticTreatments}
+              subServices={[
+                { title: translations.LaserTattoRemoval, description:translations.LaserTattoRemovalDesc },
+                { title: translations.HydrafacialSessions, description:translations.HydrafacialSessionsDesc },
+                { title: translations.CollagenStimulationTherapy, description:translations.CollagenStimulationDesc},
+                { title:translations.PainlessPreciseHairRemoval, description:translations.PigmentationTreatmentDesc },
+                { title: translations.AcneScarsTreatment, description:translations.AcneScarsTreatmentDesc},
+              ]}
+            />
           </Col>
-          <Col lg={4} md={6} sm={12} >
-            <ServiceCard serviceImg={service2} serviceName={translations.Slimming} serviceBackKeys={[translations.TargatedAreaSliming,translations.FullBodyFatReduction]} />
+
+      
+          <Col
+            lg={4}
+            md={6}
+            sm={12}
+            data-aos="fade-up"
+            data-aos-delay="200" 
+          >
+            <ServiceCard
+              serviceImg={slim}
+              serviceName={translations.Slimming}
+              subServices={[
+                { title: translations.TargatedAreaSliming, description: translations.TargatedAreaSlimingDesc },
+                { title: translations.FullBodyFatReduction, description:translations.FullBodyFatReductionDesc },
+                
+              ]}
+            />
           </Col>
-          <Col lg={4} md={6} sm={12}>
-            <ServiceCard serviceImg={service3} serviceName={translations.AestheticTreatments} serviceBackKeys={[
-              translations.LaserTattoRemoval,translations.HydrafacialSessions,translations.CollagenStimulationTherapy,translations.PigmentationTreatmentSolutions,translations.AcneScarsTreatment,
-              translations.HairRestoration,translations.Fillers,translations.Botox
-            ]} />
+
+       
+          <Col
+            lg={4}
+            md={6}
+            sm={12}
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <ServiceCard
+              serviceImg={tooth}
+              serviceName={translations.DentalCareServices}
+              subServices={[
+                { title: translations.Veneers, description: translations.VeneersDesc },
+                { title: translations.HollywoodSmile, description:translations.HollywoodSmileDesc },
+                { title: translations.ProfessionalTeethWhitening, description: translations.ProfessionalTeethWhiteningDesc },
+                { title: translations.DeepTeethCleaning, description: translations.DeepTeethCleaningDesc },
+              ]}
+            />
           </Col>
-          <Col lg={4} md={6} sm={12} >
-            <ServiceCard serviceImg={service4} serviceName={translations.LaserHairRemoval} serviceBackKeys={[translations.PainlessPreciseHairRemoval,translations.Solutions]} />
+
+
+          <Col
+            lg={4}
+            md={6}
+            sm={12}
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <ServiceCard
+              serviceImg={service4}
+              serviceName={translations.LaserHairRemoval}
+              subServices={[
+                { title: translations.LaserHairRemoval, description: translations.LaserHairRemovalDEsc },
+              ]}
+            />
           </Col>
+      
         </Row>
+        <a href="#contact" className='BookYourGlow'>Book Your Glow-Up Today</a>
+        </div>
+        
       </Container>
     </div>
   );

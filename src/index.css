@@ -8,6 +8,9 @@ a{
   text-decoration: none !important;
 }
 
+body{
+  background-color: #d08c6a0d !important;
+}
 :root {
   /* Fonts */
   --Garamond-Font: "EB Garamond", serif;

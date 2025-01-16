@@ -2,11 +2,16 @@
 .Footer {
     background: linear-gradient(135deg, rgba(185, 122, 86, 1) 0%, rgba(166, 113, 83, 1) 13%, rgba(135, 99, 77, 1) 35%);
     color: var(--white-color);
-    padding: 40px 20px;
+    /* padding: 0 20px; */
     text-align: center;
     font-family: var(--Garamond-Font);
 }
-
+.phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 .footer_content {
     display: flex;
     justify-content: space-between;
@@ -15,17 +20,18 @@
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
-}
+    padding: 20px;
+}   
 
 .callUs {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    gap: 15px;
+    gap: 20px;
 }
 
 .callUs a {
@@ -83,7 +89,10 @@
     fill: var(--white-color);
     transition: fill 0.3s ease;
 }
-
+p{
+    padding: 0;
+    margin: 0;
+}
 .socialLinks a:hover svg path {
     fill: var(--primary-color);
 }
@@ -94,12 +103,21 @@
 }
 
 .copywrite {
+    margin: 0;
     margin-top: 20px;
+    padding: 0;
     font-size: 16px;
     color: var(--white-color);
     letter-spacing: 0.5px;
 }
 
+:dir(rtl) .phone{
+   flex-direction: row-reverse;
+}
+:dir(rtl) .phone a p {
+    direction: rtl; /* اجعل الكتابة في اتجاه اليمين إلى اليسار عند اللغة العربية */
+    unicode-bidi: embed; /* تفعيل اتجاه النص بناءً على الـ direction */
+}
 @media (max-width: 767px) {
     .footer_content {
         flex-direction: column;
@@ -109,7 +127,8 @@
     }
 
     .callUs {
-        align-items: center;
+        align-items: start;
+         flex-direction: column;
     }
 
     .socialLinks {

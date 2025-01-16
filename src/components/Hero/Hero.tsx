@@ -38,12 +38,12 @@ const Hero = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="m-auto">
-                <Nav.Link href="#home">About</Nav.Link>
-                <Nav.Link href="#link">Services</Nav.Link>
-                <Nav.Link href="#link">Contact</Nav.Link>
+                <Nav.Link href="#home">{translations.Home}</Nav.Link>
+                <Nav.Link href="#Services">{translations.Services}</Nav.Link>
+                <Nav.Link href="#link">{translations.ContactUs}</Nav.Link>
               </Nav>
               <div className="left-navbar-section d-flex align-items-center justify-content-center">
-                <a className="me-3" href="#">
+                <a className="me-3" href="#contact">
                   Book Now
                 </a>
                 <Dropdown>

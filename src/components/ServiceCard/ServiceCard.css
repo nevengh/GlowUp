@@ -1,43 +1,35 @@
 .sercie_Card {
-    width: 420px;
-    height: 420px;
-    position: relative;
-    perspective: 1000px; /* Enables 3D flip effect */
-    overflow: hidden;
-    /* border-radius: 4px; */
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 10px 0;
-    cursor: pointer;
-  }
+  width: 420px;
+  height: 400px;
+  position: relative;
+  perspective: 1000px; /* Enables 3D flip effect */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px 0;
+  cursor: pointer;
+  border-radius: 15px; /* Smooth, rounded corners */
+  background: linear-gradient(145deg, #e0e0e0, #ffffff); /* Soft 3D gradient */
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.8); /* 3D shadow effect */
+  transition: all 0.3s ease;
+}
+
+.sercie_Card:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.9); /* Enhanced shadow */
+}
  
-  .sercie_Card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* border-radius: 10px; */
-  }
   
   /* Add a blur effect and gradient at the bottom */
   
   /* Content inside the card */
   .card_content {
-    position: absolute;
-    text-align: center;
-    z-index: 2;
-    color: white;
-    background-color: hsla(0, 0%, 100%, 0.1);
-    backdrop-filter: blur(2px);
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-     /* إضافة تأثير بدون حواف */
-     mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
-     -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    width: 100%; /* Span the full width */
+    padding: 10px; /* Add padding around the text */
+    background-color: hsla(0, 0%, 100%, 0.9); /* Ensure visibility over the image */
+    backdrop-filter: blur(4px); /* Optional blur effect */
+    text-align: center; /* Center align the text */
   }
   .card_front button {
     width: 80%;
@@ -53,8 +45,10 @@
     margin-top: 15px;
     cursor: pointer;
     font-family: var(--Garamond-Font); /* Match the font style */
+    position: absolute;
+    bottom: 0;
   }
-  .card_front button:hover {
+  .card_front button:hover  {
     background-color: var(--primary-color, #b97a56); /* Fill button with primary color on hover */
     color: #fff; /* Text changes to white */
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
@@ -62,24 +56,13 @@
   }
   
   .card_content h3 {
-    font-size: 26px; /* Slightly smaller for balance */
-    font-weight: 700; /* Bold to emphasize the title */
-    font-family: var(--Garamond-Font, "Georgia", serif); /* Classic font for elegance */
-    color: var(--primary-color, #b97a56); /* Matches the primary theme color */
-    text-transform: capitalize; /* Consistent capitalization for titles */
-    letter-spacing: 1.5px; /* Subtle spacing for readability */
-    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds depth and visibility */
-    margin: 0; /* Removes default margin */
-    padding: 0 10px; /* Ensures proper spacing inside the container */
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
-    cursor: pointer; /* Interactive pointer */
+    font-size: 24px; /* Adjust for visibility */
+    font-weight: bold;
+    margin: 10px 0 0 0; /* Add spacing between elements */
+    color: var(--primary-color, #b97a56);
+    text-transform: capitalize;
   }
-  .card_content h3:hover {
-    color: #fff; /* Text turns white on hover */
-    transform: scale(1.1); /* Slight zoom effect */
-    text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4); /* More pronounced shadow on hover */
-  }  
-  
+ 
   
   
   .card_front,
@@ -96,25 +79,58 @@
   transform: rotateY(0deg);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  background: linear-gradient(145deg, #ffffff, #f3f3f3); /* Front gradient for depth */
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.7); /* Inner shadow for depth */
 }
 
+.service_image {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
 .card_back {
   transform: rotateY(180deg);
-  background-color: #f1f1f1;
-  backdrop-filter: blur(20px);
-  color: #333; /* Customize text color */
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Back gradient for depth */
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.6);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between; /* Space out content */
   align-items: center;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 3px solid #333;
   overflow: hidden;
+  padding: 20px;
 }
+
+.subservices_container {
+  width: 100%;
+  height: 80%; /* Allocate height for scrolling content */
+  overflow-y: auto; /* Enable scrolling for long content */
+  padding: 10px;
+}
+.SubService {
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ccc; /* Optional separator */
+  padding-bottom: 10px;
+}
+.SubService:last-child {
+  border-bottom: none; /* Remove separator from the last item */
+}
+
+.SubService h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-color, #b97a56);
+  margin: 5px 0;
+}
+.SubService p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+
 
 .sercie_Card.flipped .card_front {
   transform: rotateY(-180deg);
@@ -148,4 +164,12 @@
   color: var(--primary-color, #b97a56);
   border: 2px solid var(--primary-color, #b97a56);
   background: none;
+}
+
+@media(max-width:450px){
+  .sercie_Card {
+    width: 100%;
+    height: 420px;
+    
+  }
 }
