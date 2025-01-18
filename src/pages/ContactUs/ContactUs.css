@@ -28,6 +28,17 @@
     border-bottom: 1px solid white;
     font-family: var(--Garamond-Font);
  }
+ .form-select{
+   background-color: none;
+   outline: none;
+   cursor: pointer;
+   color: white;
+   font-family: var(--Garamond-Font);
+ }
+ .form-select option {
+   color: black; /* This sets the font color for options */
+   background-color: white; /* Optional: Ensures the background is white */
+}
  textarea.form-control{
     border:1px solid white ;
     color: white;
@@ -59,3 +70,20 @@
  .ContactUs iframe{
     width: 100%;
  }
+
+ .send_btn{
+   width: 200px;
+   background-color: var(--primary-color); /* Transparent background for a modern look */
+   letter-spacing: 3px;
+   transition: all 0.3s ease; /* Smooth transitions for hover effects */
+    cursor: pointer;
+    font-family: var(--Garamond-Font); /* Match the font style */
+    color: #fff; /* Text changes to white */
+    border: none;
+ }
+ .send_btn:hover{
+   border: 2px solid var(--primary-color, #b97a56); /* Outline matches primary theme */
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+   transform: scale(1.05); /* Slightly enlarge for interactivity */
+   background: none !important;
+}

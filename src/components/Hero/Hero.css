@@ -13,13 +13,28 @@
     background: rgba(0, 0, 0, 0.5) !important;
 } */
 
-.overlay {
-    position: absolute;
+.navbar-overlay {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000; /* Ensure it is above other elements */
+    backdrop-filter: blur(5px); /* Optional: Add a blur effect for better aesthetics */
+    transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+  }
+  
+  .navbar-overlay .navbar-collapse {
+    justify-content: space-between;
+  }
+.overlay {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
     z-index: 99;
+   
 }
+
 .navbar .dropdown{
     background-color: var(--white-color);
     border-radius: 4px;
@@ -46,6 +61,27 @@
     animation: shake 0.5s ease-in-out infinite;
 }
 
+.BookGlow{
+    width: max-content;
+    background-color: var(--primary-color); /* Transparent background for a modern look */
+    letter-spacing: 3px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 25px; /* Rounded edges for a softer feel */
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+    cursor: pointer;
+    font-family: var(--Garamond-Font); /* Match the font style */
+    color: #fff; /* Text changes to white */
+}
+.BookGlow:hover{
+    color: var(--primary-color, #b97a56); /* Primary color text */
+    border: 2px solid var(--primary-color, #b97a56); /* Outline matches primary theme */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+    transform: scale(1.05); /* Slightly enlarge for interactivity */
+    background-color: transparent;
+}
 @keyframes shake {
     0%, 100% {
         transform: translateX(0);
@@ -74,12 +110,18 @@
 /* hero content */
 .hero-content {
     position: absolute;
-    top: 140%;
-    left: 10%;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%,-20%,);
     color: var(--primary-color);
     text-align: left;
     z-index: 100;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 .hero-content h2{
     font-size: 18px;
@@ -89,7 +131,7 @@
 .hero-heading {
     font-size: 60px;
     font-family: var(--Garamond-Font);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .hero-btn {
@@ -108,3 +150,57 @@
     background-color: var(--secondary-color);
     transform: translateY(-5px);
 }
+
+
+@media(max-width:767px){
+   
+    .hero-content h1 ,.hero-content h2 ,.hero-content a{
+        text-align: center;
+        margin: 0 !important;
+    }
+    .hero-content{
+      left: 0;
+    }
+    .hero-content h1{
+        font-size: 45px;
+        font-weight: 600;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .navbar-overlay .navbar-collapse {
+        display: none; /* Ensure it starts as hidden */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(135deg, #b97a5692, #d08c6aa5);
+        color: var(--white-color); /* Ensure text remains readable */
+        transition: background-color 0.3s ease;
+    }
+
+    .navbar-overlay .navbar-collapse.show {
+        display: flex !important; /* Show only when open */
+    }
+
+    .navbar-collapse .left-navbar-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1rem;
+        color: wheat;
+    }
+
+
+  
+    .navbar-collapse .left-navbar-section > * {
+      margin-bottom: 0.5rem;
+    }
+  
+    .navbar-collapse .left-navbar-section a {
+      margin-right: 0;
+    }
+  }
+  

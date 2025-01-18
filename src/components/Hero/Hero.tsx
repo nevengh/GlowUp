@@ -22,15 +22,15 @@ const Hero = () => {
       <video src={heroVideo} autoPlay muted loop></video>
       <div className="overlay">
         <div className="hero-content">
-          <h1 className="hero-heading" >
+          <h1 className="hero-heading " >
             {translations.HeroHeadLine}
           </h1>
           <h2>{translations.aboutHeading}</h2>
-          <a href="#contact" className="hero-btn mt-4" >
+          <a href="#contact" className="BookGlow" >
             {translations.HeroBTN}
           </a>
         </div>
-        <Navbar expand="lg" className="navbar-overlay">
+        <Navbar expand="lg" className="navbar-overlay" fixed="top">
           <Container>
             <Navbar.Brand href="#home">
               <img src={logo} alt="Glow Up Logo" />

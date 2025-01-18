@@ -90,7 +90,20 @@ ModernUniqueTechnology:"Modern & Unique Technology",
 ModernUniqueTechnologyDesc:"Our clinic is equipped with cutting-edge technology and the latest devices, providing advanced and comfortable treatments for skin rejuvenation, hair removal, and body sculpting.",
 ExceptionalResults:"Exceptional Results",
 ExceptionalResultsDesc:" At Glow Up Clinic, we are dedicated to delivering outstanding results, from radiant skin and dazzling smiles to beautifully contoured physiques.",
-
+OpeningHours:"Opening Hours",
+name:"Name",
+Email:"Email address",
+Message:"Message",
+EnterYourMessage:"Enter Your Message",
+SelectAppointment:"Select Appointment Date",
+SelectService:"Select Service",
+Date:"Date",
+SelectYourService:"Select Your Service",
+EmailID:"Your Email Id",
+HelloIm:"Hello I am!",
+BOOKYOURSLOT:"BOOK YOUR SLOT",
+APPOINTMENT:"APPOINTMENT",
+Submit:"Send",
 };
 
 export default en;

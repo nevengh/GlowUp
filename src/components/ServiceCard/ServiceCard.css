@@ -166,10 +166,9 @@
   background: none;
 }
 
-@media(max-width:450px){
+@media(max-width:520px){
   .sercie_Card {
-    width: 100%;
-    height: 420px;
-    
+    width: 100% !important;
+    height: 400px;
   }
 }

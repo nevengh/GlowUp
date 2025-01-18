@@ -92,4 +92,18 @@ export interface Translations{
     ModernUniqueTechnologyDesc:string;
     ExceptionalResults:string;
     ExceptionalResultsDesc:string;
+    OpeningHours:string;
+    name:string;
+    Email:string;
+    EmailID:string;
+    Message:string;
+    EnterYourMessage:string;
+    SelectAppointment:string;
+    SelectService:string;
+    Date:string;
+    SelectYourService:string;
+    HelloIm:string;
+    BOOKYOURSLOT:string;
+    APPOINTMENT:string;
+    Submit:string;
 }

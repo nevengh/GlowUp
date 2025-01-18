@@ -91,8 +91,20 @@ const ar: Translations = {
     ModernUniqueTechnologyDesc:"تتميز عيادتنا في دبي بأحدث التقنيات والأجهزة المتطورة لتقديم علاجات متقدمة ومريحة لتجديد البشرة، إزالة الشعر، ونحت الجسم.",
     ExceptionalResults:"نتائج مميزة",
     ExceptionalResultsDesc:"نحن في Glow Up Clinic ملتزمون بتقديم نتائج مذهلة، بدءًا من البشرة المشرقة والابتسامات اللامعة إلى الأجسام المصقولة بأناقة.",
-    
-
+    OpeningHours:"أيام العمل",
+    name:"الاسم",
+    Email:"البريد الالكتروني",
+    Message:"الرسالة",
+    EnterYourMessage:"أدخل رسالتك",
+    SelectAppointment:"حدد تاريخ الموعد",
+    SelectService:"اختر الخدمة",
+    Date:"التاريخ",
+    EmailID:" البريد الإلكتروني الخاص بك",
+    HelloIm:"مرحبا انا!",
+    BOOKYOURSLOT:"احجز مكانك",
+    SelectYourService:"اختر الخدمة",
+    APPOINTMENT:"موعد",
+    Submit:"إرسال",
 
 };
 
