@@ -56,7 +56,13 @@
     font-family: var(--Garamond-Font) ;
 
 }
-
+.left-navbar-section a{
+    margin-right: 10px;
+}
+:dir(rtl) .left-navbar-section a{
+    margin-left: 10px;
+    margin-right: 0;
+}
 .left-navbar-section a:hover {
     animation: shake 0.5s ease-in-out infinite;
 }
@@ -144,6 +150,7 @@
     display: inline-block;
     transition: transform 0.3s ease, background-color 0.3s ease;
     animation: shake 0.9s ease-in-out infinite;
+    margin-left: 10px;
 }
 
 .hero-btn:hover {

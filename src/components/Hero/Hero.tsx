@@ -43,8 +43,8 @@ const Hero = () => {
                 <Nav.Link href="#link">{translations.ContactUs}</Nav.Link>
               </Nav>
               <div className="left-navbar-section d-flex align-items-center justify-content-center">
-                <a className="me-3" href="#contact">
-                  Book Now
+                <a className="" href="#contact">
+                  {translations.BookNow}
                 </a>
                 <Dropdown>
                   <Dropdown.Toggle variant="#CCC964" id="dropdown-basic">

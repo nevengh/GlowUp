@@ -29,10 +29,10 @@
     font-family: var(--Garamond-Font);
  }
  .form-select{
-   background-color: none;
+
    outline: none;
    cursor: pointer;
-   color: white;
+
    font-family: var(--Garamond-Font);
  }
  .form-select option {
