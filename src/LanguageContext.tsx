@@ -21,7 +21,7 @@ type LanguageProviderProps = {
 };
 
 export const LanguageProvider = ({ children }: LanguageProviderProps) => {
-  const [language, setLanguage] = useState<'en' | 'ar'>('en'); // Default to English
+  const [language, setLanguage] = useState<'en' | 'ar'>('ar'); // Default to English
 
   useEffect(() => {
     // Update the `dir` attribute and class based on the language

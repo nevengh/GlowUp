@@ -26,7 +26,7 @@ const ar: Translations = {
     DeepTeethCleaningDesc:"حافظ على صحة أسنانك مع جلسات تنظيف الأسنان الاحترافية لإزالة الجير والترسبات في دبي.",
     ProfessionalTeethWhitening:"تبييض الأسنان",
     ProfessionalTeethWhiteningDesc:"احصل على أسنان أكثر بياضًا مع تقنيات تبييض الأسنان المتقدمة في عيادتنا الطبية في دبي.",
-    Back:"للخلف",
+    Back:"عودة",
     Veneers:"الفينير",
     VeneersDesc:"احصل على ابتسامة مثالية في دبي مع الفينير المصممة لتغطية التشققات والفراغات وتغير اللون بشكل طبيعي.",
     AestheticTreatments:"قسم التجميل",
@@ -105,7 +105,15 @@ const ar: Translations = {
     SelectYourService:"اختر الخدمة",
     APPOINTMENT:"موعد",
     Submit:"إرسال",
-
+    PhoneNumber:"رقم الهاتف",
+    YourPhoneNumber:"رقم هاتفك",
+    whychooseus:"لماذا تختارنا",
+    SeeMore:"اقرأ المزيد",
+    youProvide:"نحن نقدم لك",
+    AllTypeSkine:"نحن نعالج جميع أنواع البشرة",
+    ForHer:"من أجلها",
+    ForHim:"من أجله",
+    
 };
 
 export default ar;

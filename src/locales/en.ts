@@ -104,6 +104,14 @@ HelloIm:"Hello I am!",
 BOOKYOURSLOT:"BOOK YOUR SLOT",
 APPOINTMENT:"APPOINTMENT",
 Submit:"Send",
+YourPhoneNumber:"Your Phone Number !",
+PhoneNumber:"Phone Number",
+whychooseus:"Why Choose US",
+SeeMore:"See More",
+youProvide:"We Provide for You",
+AllTypeSkine:"We Treat All Types of Skin",
+ForHer:"For HER",
+ForHim:"For HIM"
 };
 
 export default en;

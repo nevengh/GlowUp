@@ -26,7 +26,9 @@ const ServicesPage = () => {
   }, []);
 
   return (
-    <div className="ServicesPage mt-5">
+    <div id="service" className="services_Home mt-5">
+      <h1 className="text-center">{translations.Services}</h1>
+      <div className="ServicesPage mt-5">
       <Container>
         <div className="AestheticTreatments">
         
@@ -114,6 +116,8 @@ const ServicesPage = () => {
         
       </Container>
     </div>
+    </div>
+    
   );
 };
 

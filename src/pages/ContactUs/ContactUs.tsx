@@ -6,7 +6,7 @@ import Aos from "aos";
 import { useLanguage } from "../../LanguageContext";
 import en from "../../locales/en";
 import ar from "../../locales/ar";
-
+import emailjs from "emailjs-com"; 
 const ContactUs = () => {
   const { language } = useLanguage();
   const translations = language === "en" ? en : ar;
@@ -17,8 +17,32 @@ const ContactUs = () => {
     Aos.init({ duration: 1000, once: true });
   }, []);
 
+
+   // Function to send email using EmailJS
+   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // تتبع الحدث عند الضغط على زر "Request a Free Consultation"
+    // pushToDataLayer("buttonClick", { button: "RequestConsultation" });
+    emailjs
+      .sendForm(
+        "service_91tapwe",
+        "template_g5f8556",
+        e.currentTarget,
+        "7yJVuAY4MX5SUheEB"
+      )
+      .then((result) => {
+        console.log("Email sent successfully!", result);
+       
+      })
+      .catch((error) => {
+        console.log("Failed to send email:", error);
+        alert("حدث خطأ أثناء إرسال النموذج");
+      });
+    e.currentTarget.reset();
+  };
   return (
-    <div className="ContactUs">
+    <div id="contact" className="conatct_Home"  >
+<div className="ContactUs">
       <Container>
         <Row>
           <Col lg={6} md={6} sm={12}>
@@ -26,23 +50,28 @@ const ContactUs = () => {
               <h3>{translations.APPOINTMENT}</h3>
               <h1>{translations.BOOKYOURSLOT}</h1>
             </div>
-            <Form data-aos="fade-up" data-aos-delay="200">
+            <Form data-aos="fade-up" data-aos-delay="200" onSubmit={sendEmail}>
               <Form.Group className="mb-3" controlId="formBasicName">
                 <p className="text-form mt-5">{translations.HelloIm}</p>
                 <Form.Label>{translations.name}</Form.Label>
-                <Form.Control type="text" />
+                <Form.Control type="text" name='from_name' />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicName">
+                <p className="text-form mt-5">{translations.YourPhoneNumber}</p>
+                <Form.Label>{translations.PhoneNumber}</Form.Label>
+                <Form.Control type="text" name='phone_number' />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <p className="text-form mt-5">{translations.EmailID}</p>
                 <Form.Label>{translations.Email}</Form.Label>
-                <Form.Control type="email" />
+                <Form.Control type="email" name='user_email' />
               </Form.Group>
               <Form.Group>
                 <p className="text-form mt-5 m-2">
                   {translations.SelectYourService}
                 </p>
-                <Form.Select aria-label="Select Service">
+                <Form.Select aria-label="Select Service" name='user_service'>
                   <option>{translations.SelectService}</option>
                   <option value="Aesthetic">
                     {translations.AestheticTreatments}
@@ -61,7 +90,7 @@ const ContactUs = () => {
                   {translations.SelectAppointment}
                 </p>
                 <Form.Label>{translations.Date}</Form.Label>
-                <Form.Control type="date" />
+                <Form.Control type="date" name='user_time' />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicMessage">
@@ -69,7 +98,7 @@ const ContactUs = () => {
                   {translations.EnterYourMessage}
                 </p>
                 <Form.Label>{translations.Message}</Form.Label>
-                <Form.Control as="textarea" rows={3} />
+                <Form.Control as="textarea" rows={3} name="message" />
               </Form.Group>
                {/* Submit Button */}
                <Button className='send_btn mb-2' variant="dark" type="submit">
@@ -109,6 +138,8 @@ const ContactUs = () => {
         </Row>
       </Container>
     </div>
+    </div>
+    
   );
 };
 

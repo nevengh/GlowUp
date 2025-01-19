@@ -106,4 +106,13 @@ export interface Translations{
     BOOKYOURSLOT:string;
     APPOINTMENT:string;
     Submit:string;
+    YourPhoneNumber:string;
+    PhoneNumber:string;
+    whychooseus:string;
+    SeeMore:string;
+    youProvide:string;
+    AllTypeSkine:string;
+    ForHim:string;
+    ForHer:string;
+
 }

@@ -22,7 +22,11 @@
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
     transform: scale(1.05); /* Slightly enlarge for interactivity */
 }
-
+ /* services */
+ .services_Home h1 , .FAq_Heading,.WhyChooseUs h1{
+  text-transform: uppercase;
+  font-family: var(--Baskerville-Font);
+}
 @media(max-width:520px){
   .BookYourGlow{
     width: 80% !important;

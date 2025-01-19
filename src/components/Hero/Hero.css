@@ -53,7 +53,7 @@
 }
 .nav-link{
     font-size: 25px; 
-    font-family: var(--Garamond-Font) ;
+    font-family: var(--Garamond-Font);
 
 }
 .left-navbar-section a{
@@ -167,6 +167,13 @@
     }
     .hero-content{
       left: 0;
+      padding: 0 10px;
+    }
+    .BookGlow{
+        width: 80%;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 1px;
     }
     .hero-content h1{
         font-size: 45px;
@@ -185,29 +192,21 @@
         background: linear-gradient(135deg, #b97a5692, #d08c6aa5);
         color: var(--white-color); /* Ensure text remains readable */
         transition: background-color 0.3s ease;
+        padding: 20px;
+        border-radius: 4px;
+    }
+    .navbar-overlay .navbar-collapse .nav-link{
+        color: white;
+        
     }
 
     .navbar-overlay .navbar-collapse.show {
         display: flex !important; /* Show only when open */
     }
 
-    .navbar-collapse .left-navbar-section {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-top: 1rem;
-        color: wheat;
-    }
-
-
-  
-    .navbar-collapse .left-navbar-section > * {
-      margin-bottom: 0.5rem;
-    }
-  
-    .navbar-collapse .left-navbar-section a {
-      margin-right: 0;
+    .left-navbar-section .book_nav{
+        display: none;
     }
   }
   
+ 

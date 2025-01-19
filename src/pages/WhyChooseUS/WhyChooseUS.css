@@ -1,0 +1,38 @@
+/* WhyChooseUs */
+.ExpertMedicalTeamCard {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15), -4px -4px 10px rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ExpertMedicalTeamCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2), -6px -6px 15px rgba(255, 255, 255, 0.9);
+  }
+  
+  .ExpertMedicalTeamCard h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .ExpertMedicalTeamCard p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Add some spacing between the cards in the row */
+  .WhyChooseUs .row > div {
+    margin-bottom: 30px;
+  }
+
+/* Ensure all cards take the same height */
+.WhyChooseUs .row > div > .ExpertMedicalTeamCard {
+    flex: 1;
+    min-height: 300px; /* Define a consistent minimum height */
+  }  

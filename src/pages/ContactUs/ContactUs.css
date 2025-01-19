@@ -87,3 +87,20 @@
    transform: scale(1.05); /* Slightly enlarge for interactivity */
    background: none !important;
 }
+
+/* Conatct Home */
+.conatct_Home {
+   padding: 15px 0;
+   background: linear-gradient(45deg, #b97a56 50%, #d08c6a 50%);
+   background-size: 200% 100%;
+   animation: waveAnimation 5s infinite alternate;
+ }
+ 
+ @keyframes waveAnimation {
+   0% {
+     background-position: 0% 0%;
+   }
+   100% {
+     background-position: 100% 0%;
+   }
+ }

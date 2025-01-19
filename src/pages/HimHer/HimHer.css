@@ -1,0 +1,52 @@
+.for-him-her {
+    width: 85%;
+    margin: 30px auto;
+}
+.choice-btn .btn {
+    background-color: var(--primary-color);
+    padding: 10px 35px;
+    outline: none;
+    border: none;
+    font-family: var(--Garamond-Font);
+    font-size: 20px;
+    margin-left: 10px;
+}
+.choice-btn .btn:focus {
+    background-color: #1b1b1b;
+}
+.subhead-title {
+    font-family: var(--Garamond-Font);
+    font-size: 15px;
+    letter-spacing: 5px;
+    line-height: 30px;
+}
+:dir(rtl) .subhead-title {
+    letter-spacing: normal;
+}
+.head-title {
+    font-family: var(--Baskerville-Font);
+}
+.image-box {
+    width: 80%;
+    height: 500px;
+    margin: 10px auto;
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media(max-width:767px){
+    .image-box{
+        width: 100%;
+    }
+    .image-box img{
+        object-fit: contain;
+    }
+    .for-him-her{
+        width: 100%;
+    }
+}

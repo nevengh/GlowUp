@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./ServiceCard.css";
 import { Button } from "react-bootstrap";
-
+import { useLanguage } from "../../LanguageContext";
+import en from "../../locales/en";
+import ar from "../../locales/ar";
 interface SubService {
   title: string;
   description: string;
@@ -18,6 +20,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   serviceName,
   subServices,
 }) => {
+  const { language } = useLanguage();
+  const translations = language === "en" ? en : ar;
   const [flipped, setFlipped] = useState(false);
 
   const handleFlip = () => {
@@ -32,7 +36,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <div className="card_content">
           <h3>{serviceName}</h3>
         </div>
-        <button>See More</button>
+        <button>{translations.SeeMore}</button>
       </div>
 
       {/* Back Side */}
@@ -46,7 +50,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           ))}
         </div>
         <Button variant="dark" onClick={handleFlip}>
-          Back
+          {translations.Back}
         </Button>
       </div>
     </div>

@@ -22,3 +22,10 @@ body{
   --black-color:#000;
   
 }
+
+#Hero,
+#service,
+#chooseUS,
+#contact {
+  scroll-margin-top: 150px; /* Adjust this value based on your header height */
+}

@@ -7,18 +7,18 @@ import logo from "../../assets/glowupLogo-removebg-preview.png";
 import { useLanguage } from "../../LanguageContext";
 import en from "../../locales/en";
 import ar from "../../locales/ar";
-import { Dropdown } from "react-bootstrap";
+// import { Dropdown } from "react-bootstrap";
 
 const Hero = () => {
-  const { language, setLanguage } = useLanguage();
+  const { language } = useLanguage();
   const translations = language === "en" ? en : ar;
 
-  const handleLanguageChange = (lang: "en" | "ar") => {
-    setLanguage(lang);
-  };
+  // const handleLanguageChange = (lang: "en" | "ar") => {
+  //   setLanguage(lang);
+  // };
 
   return (
-    <div className="Hero">
+    <div id="home" className="Hero">
       <video src={heroVideo} autoPlay muted loop></video>
       <div className="overlay">
         <div className="hero-content">
@@ -39,14 +39,15 @@ const Hero = () => {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="m-auto">
                 <Nav.Link href="#home">{translations.Home}</Nav.Link>
-                <Nav.Link href="#Services">{translations.Services}</Nav.Link>
-                <Nav.Link href="#link">{translations.ContactUs}</Nav.Link>
+                <Nav.Link href="#service">{translations.Services}</Nav.Link>
+                <Nav.Link href="#chooseUS">{translations.whychooseus}</Nav.Link>
+                <Nav.Link href="#contact">{translations.ContactUs}</Nav.Link>
               </Nav>
               <div className="left-navbar-section d-flex align-items-center justify-content-center">
                 <a className="" href="#contact">
                   {translations.BookNow}
                 </a>
-                <Dropdown>
+                {/* <Dropdown>
                   <Dropdown.Toggle variant="#CCC964" id="dropdown-basic">
                     {language === "en"
                       ? translations.English
@@ -60,7 +61,7 @@ const Hero = () => {
                       {translations.Arabic}
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown>
+                </Dropdown> */}
               </div>
             </Navbar.Collapse>
           </Container>
