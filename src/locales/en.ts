@@ -111,7 +111,18 @@ SeeMore:"See More",
 youProvide:"We Provide for You",
 AllTypeSkine:"We Treat All Types of Skin",
 ForHer:"For HER",
-ForHim:"For HIM"
+ForHim:"For HIM",
+WhyChooseUs_Title:"Why Choose Us - GLow Up",
+WhyChooseUs_Desc:"Discover why Glow Up Clinic is your best choice for advanced medical care with a modern touch.",
+Service_Title:"Services - Glow Up",
+Service_Desc:"Glow Up Clinic offers top-rated medical and aesthetic treatments in Dubai. From advanced HydraFacial sessions and acne treatments to effective laser tattoo and hair removal, our expert dermatologists and state-of-the-art technology ensure outstanding results. We also specialize in Botox, dermal fillers, and Hollywood smile services, providing personalized care for a confident and radiant you. Visit us for affordable, high-quality services tailored to meet your beauty and wellness needs.",
+FAQ_Title:"FAQ - Glow Up",
+FAQ_Desc:"Get answers to your most pressing questions about our services at Glow Up Clinic. Whether you're curious about the number of sessions needed for tattoo removal, post-laser care tips, or the costs of Hollywood smile and dental veneers, we provide clear and detailed insights to help you make informed decisions. Your journey to beauty and wellness starts here!",
+Hero_Title:"Glow Up - Medical Center",
+Hero_Desc:"Discover the Glow Up Clinic difference, where advanced dental care and innovative aesthetic treatments meet personalized service. Our expert team in Dubai is dedicated to providing exceptional care, whether you're looking for 24-hour dental services, cutting-edge cosmetic solutions, or a trusted clinic for your wellness journey. Glow Up Clinic – your destination for radiant smiles and enhanced beauty.",
+contact_Title:"Contact Us - GLow Up",
+contact_Desc:"Get in touch with Glow Up Clinic, your trusted destination for dermatology and dental care in Dubai. Book your appointment today and experience advanced treatments tailored to your needs. Reach us easily for inquiries, consultations, or bookings.",
+
 };
 
 export default en;

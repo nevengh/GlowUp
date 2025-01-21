@@ -13,6 +13,7 @@ import { useLanguage } from "../../LanguageContext";
 import en from "../../locales/en";
 import ar from "../../locales/ar";
 
+
 const ServicesPage = () => {
   const { language } = useLanguage();
   const translations = language === "en" ? en : ar;
@@ -26,7 +27,8 @@ const ServicesPage = () => {
   }, []);
 
   return (
-    <div id="service" className="services_Home mt-5">
+   
+    <div  className="services_Home mt-5">
       <h1 className="text-center">{translations.Services}</h1>
       <div className="ServicesPage mt-5">
       <Container>
@@ -116,8 +118,7 @@ const ServicesPage = () => {
         
       </Container>
     </div>
-    </div>
-    
+    </div>    
   );
 };
 

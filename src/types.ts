@@ -114,5 +114,14 @@ export interface Translations{
     AllTypeSkine:string;
     ForHim:string;
     ForHer:string;
-
+    WhyChooseUs_Title:string;
+    WhyChooseUs_Desc:string;
+    Service_Title:string;
+    Service_Desc:string;
+    FAQ_Title:string;
+    FAQ_Desc:string;
+    Hero_Title:string;
+    Hero_Desc:string;
+    contact_Title:string;
+    contact_Desc:string;
 }

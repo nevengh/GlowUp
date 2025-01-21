@@ -5,6 +5,7 @@ import en from "../../locales/en";
 import ar from "../../locales/ar";
 import { useEffect } from "react";
 import Aos from "aos";
+
 const WhyChooseUS = () => {
       useEffect(() => {
         Aos.init({ duration: 1000, once: true });
@@ -14,6 +15,8 @@ const WhyChooseUS = () => {
   const translations = language === "en" ? en : ar;
   return (
     <>
+    {/* SEO Metadata */}
+  
       <div id="chooseUS" className="WhyChooseUs mt-5">
         <h1 className="text-center"> {translations.whychooseus} ?</h1>
         <Container>
