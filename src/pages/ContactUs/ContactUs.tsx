@@ -113,6 +113,11 @@ const ContactUs = () => {
                 {/* Google Maps Embed */}
                 <iframe
                   src={map}
+                  title={
+                    language === "en"
+                      ? "Glow Up Clinic location on Google Maps"
+                      : "موقع عيادة Glow Up على خرائط جوجل"
+                  }
                   width="600"
                   height="450"
                   style={{ border: 0 }}

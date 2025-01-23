@@ -124,4 +124,6 @@ export interface Translations{
     Hero_Desc:string;
     contact_Title:string;
     contact_Desc:string;
+    Faq:string;
+    bookyourGlow:string;
 }

@@ -77,7 +77,7 @@ const FAQ = () => {
       
       <div id="faq" className="FAQ mb-5 mt-2">
         <h1 className="FAq_Heading text-center mb-2" data-aos="fade-up">
-          FAQ
+          {translations.Faq}
         </h1>
         <Container>
           <Row className="g-3 m-auto">

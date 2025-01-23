@@ -122,6 +122,8 @@ Hero_Title:"Glow Up - Medical Center",
 Hero_Desc:"Discover the Glow Up Clinic difference, where advanced dental care and innovative aesthetic treatments meet personalized service. Our expert team in Dubai is dedicated to providing exceptional care, whether you're looking for 24-hour dental services, cutting-edge cosmetic solutions, or a trusted clinic for your wellness journey. Glow Up Clinic – your destination for radiant smiles and enhanced beauty.",
 contact_Title:"Contact Us - GLow Up",
 contact_Desc:"Get in touch with Glow Up Clinic, your trusted destination for dermatology and dental care in Dubai. Book your appointment today and experience advanced treatments tailored to your needs. Reach us easily for inquiries, consultations, or bookings.",
+Faq:"FAQ",
+bookyourGlow:"Book Your Glow-Up Today",
 
 };
 

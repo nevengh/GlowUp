@@ -1,9 +1,9 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import './ServicesPage.css';
-import laser from '../../assets/graphic-customer-service.png';
-import slim from '../../assets/apple.png';
-import tooth from '../../assets/toothIcon.png';
-import service4 from '../../assets/IPL Hair Removal System_H03_2k.png';
+import laser from '../../assets/graphic-customer-service.webp';
+import slim from '../../assets/apple.webp';
+import tooth from '../../assets/toothIcon.webp';
+import service4 from '../../assets/IPL Hair Removal System_H03_2k.webp';
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -113,7 +113,7 @@ const ServicesPage = () => {
           </Col>
       
         </Row>
-        <a href="#contact" className='BookYourGlow'>Book Your Glow-Up Today</a>
+        <a href="#contact" className='BookYourGlow'>{translations.bookyourGlow}</a>
         </div>
         
       </Container>

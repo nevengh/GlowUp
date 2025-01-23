@@ -7,7 +7,7 @@ const Footer = () => {
       <div className=" footer_content d-flex align-items-center">
         <div className="callUs">
           <div className="phone  d-flex justify-content-center align-items-center">
-            <a href="tel:+971585665592">
+            <a href="tel:+971585665592" aria-label="Call Glow Up Clinic WhatsApp Number">
               <svg
                 version="1.1"
                 id="Layer_1"
@@ -271,12 +271,12 @@ const Footer = () => {
                 <g></g>
               </svg>
             </a>
-            <a href="tel:+971585665592">
+            <a href="tel:+971585665592" aria-label="Call Glow Up Clinic WhatsApp Number">
               <p>+971585665592</p>
             </a>
           </div>
           <div className="phone  d-flex justify-content-center align-items-center">
-            <a href="tel: 04 880 5376">
+            <a href="tel:+971048805376"  aria-label="Call Glow Up Clinic Landline Number">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 id="Layer_1"
@@ -288,7 +288,7 @@ const Footer = () => {
                 <path d="M4,20c-2.206,0-4-1.794-4-4V4C0,1.794,1.794,0,4,0s4,1.794,4,4v12c0,2.206-1.794,4-4,4ZM19,2H9.657c.222,.626,.343,1.299,.343,2v12c0,3.309-2.691,6-6,6-1.392,0-2.674-.476-3.693-1.274,.704,1.909,2.542,3.274,4.693,3.274h14c2.757,0,5-2.243,5-5V7c0-2.757-2.243-5-5-5Zm-6,18c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm0-4c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm0-4c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm4,8c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm0-4c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm0-4c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm4,8c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm0-4c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm0-4c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm-5-5c-.552,0-1-.448-1-1v-2h4c1.654,0,3,1.346,3,3h-6Z" />
               </svg>
             </a>
-            <a href="">
+            <a href="tel:+971048805376" aria-label="Call Glow Up Clinic Landline Number">
               <p> 04 880 5376</p>
             </a>
           </div>
@@ -297,7 +297,7 @@ const Footer = () => {
           <img src={logo} alt="Glow Up Clinic Logo" />
         </div>
         <div className="socialLinks d-flex justify-content-center align-items-center">
-          <a href="https://www.facebook.com/profile.php?id=61566741396543&mibextid=ZbWKwL">
+          <a href="https://www.facebook.com/profile.php?id=61566741396543&mibextid=ZbWKwL" aria-label="Visit Glow Up Clinic Facebook Page">
             <svg
               width="38"
               height="38"
@@ -312,7 +312,7 @@ const Footer = () => {
             </svg>
           </a>
 
-          <a href="https://www.instagram.com/glowupclinic_dubai?igsh=MTNrZ21iOHdnb2dpNQ==">
+          <a href="https://www.instagram.com/glowupclinic_dubai?igsh=MTNrZ21iOHdnb2dpNQ=="  aria-label="Visit Glow Up Clinic Instagram Profile">
             <svg
               width="37"
               height="38"
@@ -347,7 +347,7 @@ const Footer = () => {
             </svg>
           </a>
 
-          <a href="https://www.tiktok.com/@glowupclinicdxb?_r=1&_d=e3558bmjm80lfh&sec_uid=MS4wLjABAAAAakXY20raOrs7rlS1bf6IowGaZXSjlX_902hZZMhpVdQNEnwEmGcq2Q3IYTruPH3n&share_author_id=7424193037008290821&sharer_language=ar&source=h5_m&u_code=e35590k7f46i8e&timestamp=1736954845&user_id=7127240401356702766&sec_user_id=MS4wLjABAAAAnxMTJyw2LXJyDa37W-NjOiXN1wpAfIf94fDUtUb2UcqRAnBPs0uDY1gIhLK74Enr&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7198844844327274282&share_link_id=6177774d-a505-47e4-bf04-29dd2ced5fc1&share_app_id=1233&ugbiz_name=Account&ug_btm=b6880%2Cb5836">
+          <a  aria-label="Visit Glow Up Clinic TikTok Profile" href="https://www.tiktok.com/@glowupclinicdxb?_r=1&_d=e3558bmjm80lfh&sec_uid=MS4wLjABAAAAakXY20raOrs7rlS1bf6IowGaZXSjlX_902hZZMhpVdQNEnwEmGcq2Q3IYTruPH3n&share_author_id=7424193037008290821&sharer_language=ar&source=h5_m&u_code=e35590k7f46i8e&timestamp=1736954845&user_id=7127240401356702766&sec_user_id=MS4wLjABAAAAnxMTJyw2LXJyDa37W-NjOiXN1wpAfIf94fDUtUb2UcqRAnBPs0uDY1gIhLK74Enr&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7198844844327274282&share_link_id=6177774d-a505-47e4-bf04-29dd2ced5fc1&share_app_id=1233&ugbiz_name=Account&ug_btm=b6880%2Cb5836">
             <svg
               id="Capa_1"
               enable-background="new 0 0 512 512"

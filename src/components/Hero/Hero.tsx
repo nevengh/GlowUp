@@ -38,16 +38,16 @@ const Hero = () => {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="m-auto">
-                  <Nav.Link href="#home">{translations.Home}</Nav.Link>
-                  <Nav.Link href="#service">{translations.Services}</Nav.Link>
-                  <Nav.Link href="#whyChooseUs">
+                  <Nav.Link href="#home" aria-label="Link to the home section">{translations.Home}</Nav.Link>
+                  <Nav.Link href="#service"  aria-label="Link to the services section">{translations.Services}</Nav.Link>
+                  <Nav.Link href="#whyChooseUs"  aria-label="Link to the Why Choose Us section">
                     {translations.whychooseus}
                   </Nav.Link>
-                  <Nav.Link href="#faq">{translations.FAQ_Title}</Nav.Link>
-                  <Nav.Link href="#contact">{translations.ContactUs}</Nav.Link>
+                  <Nav.Link href="#faq"  aria-label="Link to the FAQ section">{translations.Faq}</Nav.Link>
+                  <Nav.Link href="#contact"  aria-label="Link to the Contact Us section">{translations.ContactUs}</Nav.Link>
                 </Nav>
                 <div className="left-navbar-section d-flex align-items-center justify-content-center">
-                  <a className="" href="#contact">
+                  <a className="" href="#contact"  aria-label="Button to book a service now">
                     {translations.BookNow}
                   </a>
                 </div>

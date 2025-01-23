@@ -1,7 +1,7 @@
 import { Button } from 'react-bootstrap';
 import './HimHer.css';
-import her from "../../assets/her-img.jpg";
-import him from "../../assets/him-img.jpg";
+import her from "../../assets/her-img.webp";
+import him from "../../assets/him-img.webp";
 import {  useEffect, useState } from "react";
 import { useLanguage } from "../../LanguageContext";
 import en from "../../locales/en";

@@ -13,11 +13,13 @@ import { useEffect, useRef, useState } from 'react';
 import SeoComponent from './components/SeoComponnent/SeoComponnent';
 import en from './locales/en';
 import ar from './locales/ar';
+import HimHer from './pages/HimHer/HimHer';
+
 
 const App = () => {
   const AppContent = () => {
     
-    const [currentSection, setCurrentSection] = useState<'home' | 'service' | 'whyChooseUs' | 'faq' | 'contact'>('home');
+    const [currentSection, setCurrentSection] = useState<'home' | 'service' | 'whyChooseUs' | 'heim' | 'faq' | 'contact'>('home');
     const { language } = useLanguage();
     const translations = language === "en" ? en : ar;
     useEffect(() => {
@@ -26,6 +28,7 @@ const App = () => {
     const homeRef = useRef<HTMLDivElement | null>(null);
     const servicesRef = useRef<HTMLDivElement | null>(null);
     const whyChooseUsRef = useRef<HTMLDivElement | null>(null);
+    const heimRef = useRef<HTMLDivElement | null>(null);
     const faqRef = useRef<HTMLDivElement | null>(null);
     const contactRef = useRef<HTMLDivElement | null>(null);
 
@@ -33,33 +36,39 @@ const App = () => {
       home: {
         title: translations.Hero_Title,
         description: translations.Hero_Desc,
-        keywords: "Glow up clinic ,افضل عيادة اسنان في دبي...",
+        keywords: "Glow up clinic ,افضل عيادة اسنان في دبي, عيادة أسنان في دبي 24 ساعة, عيادة اسنان في دبي, عيادة جلو أب ",
         url: "https://www.glowupclinic.ae/landingpage/#home",
       },
       service: {
         title: translations.Service_Title,
         description: translations.Service_Desc,
-        keywords: "hydrafacial dubai offers,acne treatment dubai...",
+         keywords: "hydrafacial dubai offers,acne treatment dubai,tattoo removal before and after,aser tattoo removal in dubai,best dermatology clinic in dubai,best laser hair removal dubai,botox in dubai,hair botox in dubai,best botox in dubai,fillers in dubai,dermal fillers in dubai,sculptra before and after,radiesse vs sculptra,hydrafacial dubai near me,top dental clinic in dubai,cheapest dental clinic in dubai,affordable dental clinic in dubai,the best dentist in dubai,best dentist in dubai reviews,best dentist in dubai recommendation,best dentist in dubai for cleaning,best dentist in dubai for veneers,hollywood smile dubai,hollywood smile dubai price,ابتسامة هوليود في دبي,laser hair removal dubai,laser hair removal dubai price list,full body laser hair removal dubai,laser hair removal dubai offers,laser hair removal dubai near me,beard laser hair removal dubai|,laser hair removal dubai price,bikini laser hair removal dubai,ازالة التاتو بالليزر",
         url: "https://www.glowupclinic.ae/landingpage/#service",
       },
       whyChooseUs: {
         title: translations.WhyChooseUs_Title,
         description: translations.WhyChooseUs_Desc,
-        keywords: "الرعاية الطبية، عيادة متقدمة...",
+        keywords: "الرعاية الطبية، عيادة متقدمة، التقنيات الحديثة,medical care, advanced clinic, modern technology",
         url: "https://www.glowupclinic.ae/landingpage/#whyChooseUs",
       },
       faq: {
         title: translations.FAQ_Title,
         description: translations.FAQ_Desc,
-        keywords: "how many sessions for tattoo removal...",
+        keywords: "how many sessions for tattoo removal,can i shower after laser hair removal,ابتسامة هوليود3d كم سعرها,كم سعر عدسات الاسنان",
         url: "http://yourdomain.com/#Media",
       },
       contact: {
         title: translations.contact_Title,
         description: translations.contact_Desc,
-        keywords: "Glow up clinic...",
+        keywords: "Glow up clinic,عيادة جلو أب,افضل عيادة جلدية في دبي,حجز موعد اسنان",
         url: "http://yourdomain.com/#OurClients",
       },
+      heim:{
+        title:translations.Hero_Title,
+        description:translations.Hero_Desc,
+        keywords: "Glow up clinic ,افضل عيادة اسنان في دبي, عيادة أسنان في دبي 24 ساعة, عيادة اسنان في دبي, عيادة جلو أب ",
+        url: "https://www.glowupclinic.ae/landingpage/#heim",
+      }
     };
 
     useEffect(() => {
@@ -69,7 +78,7 @@ const App = () => {
         entries.forEach((entry) => {
           console.log('Observed Entry:', entry.target.id, 'Is Intersecting:', entry.isIntersecting);
           if (entry.isIntersecting) {
-            setCurrentSection(entry.target.id as 'home' | 'service' | 'whyChooseUs' | 'faq' | 'contact');
+            setCurrentSection(entry.target.id as 'home' | 'service' | 'whyChooseUs' |'heim' | 'faq' | 'contact');
           }
         });
       };
@@ -119,6 +128,9 @@ const App = () => {
         </div>
         <div id="whyChooseUs" ref={whyChooseUsRef}>
           <WhyChooseUS />
+        </div>
+        <div id="heim" ref={heimRef}>
+          <HimHer/>
         </div>
         <div id="faq" ref={faqRef}>
           <FAQ />

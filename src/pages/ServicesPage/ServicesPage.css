@@ -27,6 +27,9 @@
   text-transform: uppercase;
   font-family: var(--Baskerville-Font);
 }
+:dir(rtl){
+  letter-spacing: normal;
+}
 @media(max-width:520px){
   .BookYourGlow{
     width: 80% !important;
