@@ -8,20 +8,22 @@ import { useLanguage } from "../../LanguageContext";
 import en from "../../locales/en";
 import ar from "../../locales/ar";
 
-// import { Dropdown } from "react-bootstrap";
-
 const Hero = () => {
   const { language } = useLanguage();
   const translations = language === "en" ? en : ar;
 
-  // const handleLanguageChange = (lang: "en" | "ar") => {
-  //   setLanguage(lang);
-  // };
+
 
   return (
     <>
       <div id="home" className="Hero">
-        <video src={heroVideo} autoPlay muted loop></video>
+      <video
+  src={heroVideo}
+  preload="none"
+  autoPlay
+  muted
+  loop
+></video>
         <div className="overlay">
           <div className="hero-content">
             <h1 className="hero-heading ">{translations.HeroHeadLine}</h1>

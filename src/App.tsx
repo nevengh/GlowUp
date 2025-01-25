@@ -14,6 +14,7 @@ import SeoComponent from './components/SeoComponnent/SeoComponnent';
 import en from './locales/en';
 import ar from './locales/ar';
 import HimHer from './pages/HimHer/HimHer';
+import ClinicSlider from './components/ClinicSlider/ClinicSlider';
 
 
 const App = () => {
@@ -123,6 +124,7 @@ const App = () => {
         <div id="home" ref={homeRef}>
           <Hero />
         </div>
+        <ClinicSlider/>
         <div id="service" ref={servicesRef}>
           <ServicesPage />
         </div>

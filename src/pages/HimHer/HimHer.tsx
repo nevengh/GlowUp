@@ -35,7 +35,7 @@ const HimHer = () => {
     </div>
 
     <div className="image-box mt-4">
-      <img src={selectedImage} alt="Selected" />
+      <img loading="lazy" src={selectedImage} alt="Selected Image" />
     </div>
   </div>
   )

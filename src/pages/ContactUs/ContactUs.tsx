@@ -54,24 +54,24 @@ const ContactUs = () => {
               <Form.Group className="mb-3" controlId="formBasicName">
                 <p className="text-form mt-5">{translations.HelloIm}</p>
                 <Form.Label>{translations.name}</Form.Label>
-                <Form.Control type="text" name='from_name' />
+                <Form.Control type="text" name='from_name' required />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicName">
                 <p className="text-form mt-5">{translations.YourPhoneNumber}</p>
                 <Form.Label>{translations.PhoneNumber}</Form.Label>
-                <Form.Control type="text" name='phone_number' />
+                <Form.Control type="text" name='phone_number' required />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <p className="text-form mt-5">{translations.EmailID}</p>
                 <Form.Label>{translations.Email}</Form.Label>
-                <Form.Control type="email" name='user_email' />
+                <Form.Control type="email" name='user_email' required />
               </Form.Group>
               <Form.Group>
                 <p className="text-form mt-5 m-2">
                   {translations.SelectYourService}
                 </p>
-                <Form.Select aria-label="Select Service" name='user_service'>
+                <Form.Select aria-label="Select Service" name='user_service' required>
                   <option>{translations.SelectService}</option>
                   <option value="Aesthetic">
                     {translations.AestheticTreatments}
@@ -90,7 +90,7 @@ const ContactUs = () => {
                   {translations.SelectAppointment}
                 </p>
                 <Form.Label>{translations.Date}</Form.Label>
-                <Form.Control type="date" name='user_time' />
+                <Form.Control type="date" name='user_time' required />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicMessage">

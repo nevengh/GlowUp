@@ -32,7 +32,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <div className={`sercie_Card ${flipped ? "flipped" : ""}`}>
       {/* Front Side */}
       <div className="card_front" onClick={handleFlip}>
-        <img src={serviceImg} alt={serviceName} className="service_image" />
+        <img loading="lazy" src={serviceImg} alt={serviceName} className="service_image" />
         <div className="card_content">
           <h3>{serviceName}</h3>
         </div>

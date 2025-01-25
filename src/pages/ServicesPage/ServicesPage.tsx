@@ -1,9 +1,9 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import './ServicesPage.css';
-import laser from '../../assets/graphic-customer-service.webp';
-import slim from '../../assets/apple.webp';
-import tooth from '../../assets/toothIcon.webp';
-import service4 from '../../assets/IPL Hair Removal System_H03_2k.webp';
+import laser from '../../assets/11zon_compressed/graphic-customer-service_4_11zon.webp';
+import slim from '../../assets/11zon_compressed/apple_1_11zon.webp';
+import tooth from '../../assets/11zon_compressed/toothIcon_5_11zon.webp';
+import service4 from '../../assets/11zon_compressed/IPL Hair Removal System_H03_2k_3_11zon.webp';
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
