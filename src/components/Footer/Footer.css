@@ -1,6 +1,7 @@
 /* Footer.css */
 .Footer {
     background: linear-gradient(135deg, rgba(185, 122, 86, 1) 0%, rgba(166, 113, 83, 1) 13%, rgba(135, 99, 77, 1) 35%);
+   
     color: var(--white-color);
     /* padding: 0 20px; */
     text-align: center;

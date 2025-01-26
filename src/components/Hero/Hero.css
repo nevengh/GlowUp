@@ -8,10 +8,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block; /* تأكد من أن الفيديو يظل مرئيًا */
+    z-index: -1; /* ضع الفيديو خلف المحتوى */
 }
-/* .navbar{
-    background: rgba(0, 0, 0, 0.5) !important;
-} */
 
 .navbar-overlay {
     position: fixed;
@@ -22,7 +21,10 @@
     backdrop-filter: blur(5px); /* Optional: Add a blur effect for better aesthetics */
     transition: background-color 0.3s ease; /* Smooth transition for background color changes */
   }
-  
+  :dir(rtl).BookGlow{
+    letter-spacing: normal;
+    word-spacing: 10px;
+  }
   .navbar-overlay .navbar-collapse {
     justify-content: space-between;
   }
@@ -51,10 +53,17 @@
     display: inline-block;
     transition: transform 0.3s ease;
 }
+
 .nav-link{
     font-size: 25px; 
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-left: 10px;
     font-family: var(--Garamond-Font);
-
+    transition: all .3s ease
+}
+.nav-link:hover{
+    transform: scale(.8);
 }
 .left-navbar-section a{
     margin-right: 10px;
@@ -162,7 +171,7 @@
 
 
 @media(max-width:767px){
-   
+ 
     .hero-content h1 ,.hero-content h2 ,.hero-content a{
         text-align: center;
         margin: 0 !important;

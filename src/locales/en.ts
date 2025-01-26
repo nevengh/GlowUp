@@ -124,7 +124,11 @@ contact_Title:"Contact Us - GLow Up",
 contact_Desc:"Get in touch with Glow Up Clinic, your trusted destination for dermatology and dental care in Dubai. Book your appointment today and experience advanced treatments tailored to your needs. Reach us easily for inquiries, consultations, or bookings.",
 Faq:"FAQ",
 bookyourGlow:"Book Your Glow-Up Today",
-
+sliderCaption:"Your Journey Starts Here",
+SelectSubService: "Select Sub Service",
+LaserForMen:"Laser For Men",
+LaserForWomen:"Laser For Women",
+Skintightening:"Skin tightening",
 };
 
 export default en;

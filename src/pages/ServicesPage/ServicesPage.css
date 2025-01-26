@@ -23,9 +23,14 @@
     transform: scale(1.05); /* Slightly enlarge for interactivity */
 }
  /* services */
- .services_Home h1 , .FAq_Heading,.WhyChooseUs h1{
+ .services_Home h1 , .FAq_Heading,.WhyChooseUs h1,.slider-header{
   text-transform: uppercase;
   font-family: var(--Baskerville-Font);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 :dir(rtl){
   letter-spacing: normal;
@@ -36,5 +41,17 @@
     font-size: 16px;
     letter-spacing: 1;
     text-align: center;
+  }
+}
+@media(max-width:767px){
+  .services_Home h1 , .FAq_Heading,.WhyChooseUs h1,.slider-header{
+    text-transform: uppercase;
+    font-family: var(--Baskerville-Font);
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    line-height: 50px;
   }
 }

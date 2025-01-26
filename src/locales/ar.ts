@@ -16,7 +16,7 @@ const ar: Translations = {
     Address:"عنوان",
     HeroHeadLine:"GLow UP Clinic",
     HeroSubLine:"تألقي بشكل مختلف – عناية متطورة بانتظارك",
-    BookNow:"احجز الآن",
+    BookNow:"احجز موعدك الآن",
     aboutHeading:"تألقي من الداخل والخارج مع Glow Up Clinic – واحدة من أفضل عيادات في دبي تقدم خدمات الأسنان والجلدية والليزر لتمنحك إشراقة لا مثيل له",
     HeroBTN:"ابدأ رحلتك الآن",
     DentalCareServices:"قسم الأسنان",
@@ -53,7 +53,7 @@ const ar: Translations = {
     TargatedAreaSlimingDesc:"نحف ونحت مناطق محددة من الجسم مع علاجات التنحيف المتخصصة في دبي.",
     LaserHairRemoval:"إزالة الشعر بالليزر",
     LaserHairRemovalDEsc:"استمتع ببشرة ناعمة وخالية من الشعر مع علاجات إزالة الشعر بالليزر الآمنة والفعالة في دبي.",
-    PainlessPreciseHairRemoval:"",
+    PainlessPreciseHairRemoval:"إزالة الشعر بدقة وبدون ألم",
     Solutions:"الحلول",
     Question1:"ما تكلفة تركيب الفينير في دبي؟",
     Question2:"كم تستغرق عملية هوليوود سمايل؟",
@@ -124,7 +124,12 @@ const ar: Translations = {
     contact_Desc:"تواصل مع عيادة جلو أب، وجهتك الموثوقة لخدمات الجلدية والعناية بالأسنان في دبي. احجز موعدك اليوم واستمتع بالعلاجات المتقدمة المصممة لتلبية احتياجاتك. نحن هنا للإجابة على استفساراتك وحجز مواعيدك بكل سهولة.",
     contact_Title:"تواصل معنا - جلو أب",
     Faq:"قسم الأسئلة الشائعة",
-    bookyourGlow:"احجز جلسة التألق الخاصة بك اليوم"
+    bookyourGlow:"احجز جلسة التألق الخاصة بك اليوم",
+    sliderCaption:"رحلتك تبدأ هنا",
+    SelectSubService: "اختر الخدمة الفرعية",
+    LaserForMen:"ليزر للرجال",
+    LaserForWomen:"ليزر للنساء",
+    Skintightening:"شد البشرة",
 };
 
 export default ar;

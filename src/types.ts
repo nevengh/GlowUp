@@ -126,4 +126,9 @@ export interface Translations{
     contact_Desc:string;
     Faq:string;
     bookyourGlow:string;
+    sliderCaption:string;
+    SelectSubService:string;
+    Skintightening:string;
+    LaserForMen:string;
+    LaserForWomen:string;
 }
